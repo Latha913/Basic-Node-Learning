@@ -1,0 +1,15 @@
+const os = require('os');
+const user = os.userInfo() //info about current user
+console.log(user)
+
+// method for systems info
+
+console.log(`${os.uptime()}`);
+
+const currentOS = {
+    name: os.type(),
+    release: os.release(),
+    totelmem: os.totalmem()
+}
+
+console.log(currentOS)
